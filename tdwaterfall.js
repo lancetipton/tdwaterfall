@@ -1,5 +1,4 @@
-define(["jquery"], function(jquery) {
-	TDWaterfall = function(){
+TDWaterfall = function(){
 
 		this.init = function(args, cb){
 			this.return_cb = cb;
@@ -192,6 +191,8 @@ define(["jquery"], function(jquery) {
 				cb.call(this, this);
 			}
 		};
+		
+		return this;
+
 	}
-	return TDWaterfall;
-});
+
