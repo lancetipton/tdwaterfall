@@ -8,32 +8,34 @@ I know there are plenty of great plugins out there that already to the same thin
 
 ### How to Use:
 ```
-			wf = new TTDWaterfall();
-			wf.init({
-				containerId: "postsWrapper",
-				spaceTop: 20,
-				spaceLeft: 0,
-				perRow: 3,
-				containerBottomPad: 40,
-				breakPoints: [
-					{
-						point: 640,
-						settings: {
-							perRow: 1,
-						}
-					},
-					{
-						point: 1020,
-						settings: {
-							perRow: 2,
-						}
-					}
-				]
-			}, function(loaded){
-        if(loaded){
-          console.log("waterfall has been loaded!");
-        }
-			})
+wf = new TTDWaterfall();
+wf.init({
+	containerId: "postsWrapper",
+	spaceTop: 20,
+	spaceLeft: 0,
+	perRow: 3,
+	containerBottomPad: 40,
+	breakPoints: [
+		{
+			point: 640,
+			settings: {
+				perRow: 1,
+			}
+		},
+		{
+			point: 1020,
+			settings: {
+				perRow: 2,
+			}
+		}
+	]
+	}, 
+	function(loaded){
+	        if(loaded){
+	        	console.log("waterfall has been loaded!");
+	        }
+})
+
 ```
 
 ### Will add more info soon
